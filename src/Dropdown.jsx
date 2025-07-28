@@ -34,7 +34,7 @@ function Dropdown() {
 
   return (
     <>
-      <div class="py-3 font-semibold tracking-tight">
+      <div className="py-3 font-semibold tracking-tight">
         {countries.length == 0 ? (
           "Loading..."
         ) : (
@@ -43,7 +43,7 @@ function Dropdown() {
             id="country"
             value={selectedCountry}
             onChange={handleChange}
-            class="px-3 py-2 rounded-md shadow-xs ring-inset ring-1 ring-gray-300 hover:bg-gray-100"
+            className="px-3 py-2 rounded-md shadow-xs ring-inset ring-1 ring-gray-300 hover:bg-gray-100"
           >
             {countryList}
           </select>

@@ -34,15 +34,15 @@ function List({ country }) {
       timeZone: "UTC",
     });
     return (
-      <li key={holiday.id} class="flex py-1 w-full">
-        <div class="text-gray-600 w-1/4">{formatted}</div>
+      <li key={holiday.id} className="flex py-1 w-full">
+        <div className="text-gray-600 w-1/4">{formatted}</div>
         <div>{holiday.name[0].text}</div>
       </li>
     );
   });
 
   return (
-    <ul class="divide-y divide-gray-200 w-full">
+    <ul className="divide-y divide-gray-200 w-full">
       {console.log(holidayList)}
       {holidays.length == 0 ? "Loading..." : holidayList}
     </ul>
